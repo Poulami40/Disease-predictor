@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disease Predictor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('background-image.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .header {
+            background-color:rgb(174, 38, 83);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .logo {
+            max-width: 100px;
+            height: auto;
+        }
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .animate-fade {
+            animation: fade-in 1s ease-out;
+        }
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .footer {
+            background-color: rgb(174, 38, 83);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Logo -->
+    <div class="header">
+        <!-- <img src="Doctor.jpg" alt="Disease Predictor Logo" class="logo"> -->
+    </div>
+
+    <div class="content-container">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Disease Predictor</a>
+        </nav>
+
+        <!-- Content Container -->
+        <div class="container mt-5">
+            <h1 class="text-center animate-fade">What disease do I have?</h1>
+            <form method="post" action="/predict" class="mt-4">
+                <div class="form-group">
+                    <label for="symptoms">Enter Symptoms (comma-separated):</label>
+                    <input type="text" class="form-control" id="symptoms" name="symptoms" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Predict</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Poulami Basu</p>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
