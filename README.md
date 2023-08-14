@@ -1,2 +1,2 @@
 # Disease-predictor
-A simple page for disease predictor using ML techniques like SVM, Naive Bayes classification and random forest technique.
+Designed with a combination of Python, Flask, HTML, CSS, JavaScript, and Bootstrap, this disease prediction system offers a user-friendly interface for individuals to input their symptoms. The integration of sophisticated machine learning models, including Support Vector Machine (SVM), Naive Bayes, and Random Forest, enhances the accuracy of disease predictions based on the provided symptoms. By seamlessly combining these technologies, the application empowers users to make well-informed healthcare decisions, providing insights into potential health conditions in a quick and data-driven manner.
